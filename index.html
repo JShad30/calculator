@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="output-screen" id="output-screen"></div>
+        <button class="button button-number" id="button-one" onclick="numberButtonPressed(1)">1</button>
+        <button class="button button-number" id="button-two" onclick="numberButtonPressed(2)">2</button>
+        <button class="button button-number" id="button-three" onclick="numberButtonPressed(3)">3</button>
+        <button class="button button-number" id="button-four" onclick="numberButtonPressed(4)">4</button>
+        <button class="button button-number" id="button-five" onclick="numberButtonPressed(5)">5</button>
+        <button class="button button-number" id="button-six" onclick="numberButtonPressed(6)">6</button>
+        <button class="button button-number" id="button-seven" onclick="numberButtonPressed(7)">7</button>
+        <button class="button button-number" id="button-eight" onclick="numberButtonPressed(8)">8</button>
+        <button class="button button-number" id="button-nine" onclick="numberButtonPressed(9)">9</button>
+        <button class="button button-number" id="button-zero" onclick="numberButtonPressed(0)">0</button>
+        <button class="button button-number" id="button-point" onclick="pointButtonPressed()">.</button>
+        <button class="button button-function" id="button-plus" onclick="functionButtonPressed('Plus')">+</button>
+        <button class="button button-function" id="button-minus" onclick="functionButtonPressed('Minus')">-</button>
+        <button class="button button-function" id="button-multiply" onclick="functionButtonPressed('Multiply')">x</button>
+        <button class="button button-function" id="button-divide" onclick="functionButtonPressed('Divide')">/</button>
+        <button class="button button-function" id="button-equals" onclick="equalsButtonPressed()">=</button>
+        <button class="button button-function" id="button-clear" onclick="clearButtonPressed()">C</button>
+    </div>
+    <script src="assets/js/calc.js"></script>
+</body>
+</html>

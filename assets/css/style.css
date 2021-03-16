@@ -1,0 +1,184 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: inherit;
+    padding: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    width: 90%;
+    max-width: 320px;
+    background-color: lightgray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #000000;
+    display: grid;    
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 50px);
+    /*grid-auto-columns: 100px;
+    grid-auto-rows: 100px;*/
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3em;
+    font-weight: 600;
+    box-shadow: 2px 2px 2px #333333;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.button:active {
+    box-shadow: 1px 1px 1px #333333;
+}
+
+.button:focus {
+    outline: 0;
+}
+
+.button-number {
+    background-color: #888888;
+}
+
+.button-function {
+    background-color: rgb(94, 156, 158);
+}
+
+.button-number:hover {
+    background-color: rgb(114, 114, 114);
+}
+
+.button-function:hover {
+    background-color: rgb(83, 136, 138);
+}
+
+.button-number:active {
+    background-color: #464646;
+}
+
+.button-function:active {
+    background-color: rgb(66, 109, 110);
+}
+
+.button-function:focus {
+    border: 5px solid rgb(66, 109, 110);
+}
+
+.button-number:focus {
+    border: 5px solid #464646;
+}
+
+.output-screen {
+    grid-column: 1/ span 4;
+    grid-row: 1;
+    border: 2px solid #fafafa;
+    border-radius: 3px;
+    background-color: #333333;
+    color: #fafafa;
+    padding: 5px;
+    font-size: 2em;
+}
+
+#button-one {
+    grid-column: 1/ span 1;
+    grid-row: 2;
+}
+
+#button-two {
+    grid-column: 2/ span 1;
+    grid-row: 2;
+}
+
+#button-three {
+    grid-column: 3/ span 1;
+    grid-row: 2;
+}
+
+#button-four {
+    grid-column: 1/ span 1;
+    grid-row: 3;
+}
+
+#button-five {
+    grid-column: 2/ span 1;
+    grid-row: 3;
+}
+
+#button-six {
+    grid-column: 3/ span 1;
+    grid-row: 3;
+}
+
+#button-seven {
+    grid-column: 1/ span 1;
+    grid-row: 4;
+}
+
+#button-eight {
+    grid-column: 2/ span 1;
+    grid-row: 4;
+}
+
+#button-nine {
+    grid-column: 3/ span 1;
+    grid-row: 4;
+}
+
+#button-zero {
+    grid-column: 1/ span 1;
+    grid-row: 5;
+}
+
+#button-point {
+    grid-column: 2/ span 1;
+    grid-row: 5;
+}
+
+#button-clear {
+    grid-column: 3/ span 1;
+    grid-row: 5;
+}
+
+#button-plus {
+    grid-column: 4/ span 1;
+    grid-row: 2;
+}
+
+#button-minus {
+    grid-column: 4/ span 1;
+    grid-row: 3;
+}
+
+#button-multiply {
+    grid-column: 4/ span 1;
+    grid-row: 4;
+}
+
+#button-divide {
+    grid-column: 4/ span 1;
+    grid-row: 5;
+}
+
+#button-equals {
+    grid-column: 1/ span 4;
+    grid-row: 6;
+}
